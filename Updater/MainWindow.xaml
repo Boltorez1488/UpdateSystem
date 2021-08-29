@@ -1,0 +1,56 @@
+﻿<Window x:Class="Updater.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Updater"
+        xmlns:lib="clr-namespace:Updater.Components"
+        mc:Ignorable="d" FontFamily="/Updater;component/Fonts/#Roboto"
+        UseLayoutRounding="True"
+        Title="Game Updater (By Boltorez1488)" 
+        MinWidth="800" MinHeight="600"
+        Width="800" Height="600" 
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        WindowStartupLocation="CenterScreen" Background="#FF1F1F1F" Closing="Window_Closing">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <SelectiveScrollingGrid>
+                <SelectiveScrollingGrid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </SelectiveScrollingGrid.ColumnDefinitions>
+                <Label Grid.Column="0" Foreground="White" Background="Black" BorderBrush="#FF1F1F1F" Padding="5">Статус</Label>
+                <TextBox Grid.Column="1" Background="#FF151515" BorderBrush="Black" Padding="5" 
+                         VerticalContentAlignment="Center" IsReadOnly="True" 
+                         Text="{Binding Path=PrintConnected, Mode=OneWay}"
+                         Foreground="{Binding Path=ConnectedColor, Mode=OneWay}" Style="{DynamicResource ReadOnlyTextBox}" />
+                <Button Style="{DynamicResource DarkButton}" Grid.Column="2" Margin="-1, 0, 0, 0" Padding="5"
+                    Click="Error_Click" Visibility="{Binding Path=ErrorVisible}">Что там?</Button>
+            </SelectiveScrollingGrid>
+        </StackPanel>
+
+        <TextBox Grid.Row="1" Margin="0, 5, 0, 0" x:Name="log" TextWrapping="Wrap" 
+                     AcceptsReturn="True" IsReadOnly="True" BorderBrush="#FF172736" 
+                     Background="#CA000000" CaretBrush="White" Foreground="White" 
+                     Style="{DynamicResource LogBox}" />
+
+        <StackPanel Grid.Row="2" Margin="0, 5, 0, 0">
+            <Button Style="{DynamicResource DarkButton}" 
+                    Visibility="{Binding Path=PlayVisible}" Height="50" Click="Play_Click">Играть</Button>
+            <Button Style="{DynamicResource DarkButton}" 
+                    Visibility="{Binding Path=DownloadBtnVisible}" Height="50" Click="Download_Click" 
+                    IsEnabled="{Binding Path=IsEnabledDownload}" Content="{Binding Path=DownloadText}"/>
+            <Grid Visibility="{Binding Path=DownloadVisible}">
+                <lib:DownloadPanel x:Name="Downloader" />
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

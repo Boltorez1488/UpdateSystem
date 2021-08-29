@@ -1,0 +1,54 @@
+syntax = "proto3";
+
+package ServerPackets;
+
+// Standard crc response
+message CrcList {
+    message CrcItem {
+        string path = 1;
+        uint32 crc = 2;
+        uint64 size = 3;
+        uint64 fileId = 4;
+        string url = 5;
+    }
+    repeated CrcItem items = 1;
+}
+
+// One of crc items is updated
+message CrcUpdate {
+    repeated CrcList.CrcItem updated = 1;
+    repeated CrcList.CrcItem removed = 2;
+}
+
+// Standard send part of file to client
+//message DownloadPart {
+//    uint64 fileId = 1;
+//    bytes part = 2;
+//}
+
+// Server wait for answer from client to send next part of file
+//message DownloadWaitNext {
+//    uint64 fileId = 1;
+//}
+
+// Status of download
+//message DownloadStatus {
+//    uint64 fileId = 1;
+//    enum Status {
+//        Finished = 0;
+//        Canceled = 1;
+//        Already = 2;
+//        NotFound = 3;
+//    }
+//    Status status = 2;
+//}
+
+// Global lock/unlock downloads
+message DownloadLockable {
+    bool isLocked = 1;
+}
+
+// Server send remove files
+message FilesRemove {
+    repeated string pathes = 1;
+}

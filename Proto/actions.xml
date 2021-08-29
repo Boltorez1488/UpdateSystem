@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Actions>
+    <OpcodeTypeCs>byte</OpcodeTypeCs>
+    <ProtoOpcodes>
+        <Data>client_opcodes.xml</Data>
+        <EnumName>ClientOpcodes</EnumName>
+
+        <Include>client.proto</Include>
+
+        <CsClassPath>../Shared/Opcodes</CsClassPath>
+        <CsEnumPath>../Shared/Opcodes</CsEnumPath>
+    </ProtoOpcodes>
+    <ProtoOpcodes>
+        <Data>server_opcodes.xml</Data>
+        <EnumName>ServerOpcodes</EnumName>
+
+        <Include>server.proto</Include>
+
+        <CsClassPath>../Shared/Opcodes</CsClassPath>
+        <CsEnumPath>../Shared/Opcodes</CsEnumPath>
+    </ProtoOpcodes>
+</Actions>

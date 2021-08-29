@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package SystemConfig;
+
+message WinParams {
+    int32 w = 1;
+    int32 h = 2;
+    bool maximized = 3;
+}
+
+message DownloadInfo {
+    uint64 id = 1;
+    uint32 crc = 2;
+    string path = 3;
+    uint32 checkCrc = 4;
+}
+
+message Config {
+    WinParams win = 1;
+    DownloadInfo download = 2;
+}

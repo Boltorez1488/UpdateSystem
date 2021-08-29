@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OpcodesData>
+  <Opcode Id="1">ServerPackets.CrcList</Opcode>
+  <Opcode Id="2">ServerPackets.CrcUpdate</Opcode>
+  <Opcode Id="3">ServerPackets.DownloadPart</Opcode>
+  <Opcode Id="4">ServerPackets.DownloadWaitNext</Opcode>
+  <Opcode Id="5">ServerPackets.DownloadStatus</Opcode>
+  <Opcode Id="6">ServerPackets.DownloadLockable</Opcode>
+  <Opcode Id="7">ServerPackets.FilesRemove</Opcode>
+</OpcodesData>

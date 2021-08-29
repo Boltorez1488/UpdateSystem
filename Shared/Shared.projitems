@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>70a8ac07-d0b4-4388-b99d-d7d61c7329bd</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\ByteArray.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\ByteString.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\CodedInputStream.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\CodedOutputStream.ComputeSize.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\CodedOutputStream.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Collections\Lists.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Collections\MapField.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Collections\ProtobufEqualityComparers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Collections\ReadOnlyDictionary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Collections\RepeatedField.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Compatibility\MethodInfoExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Compatibility\PropertyInfoExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Compatibility\StreamExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Compatibility\TypeExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Extension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\ExtensionRegistry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\ExtensionSet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\ExtensionValue.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\FieldCodec.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\FieldMaskTree.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\FrameworkPortability.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\ICustomDiagnosticMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\IDeepCloneable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\IExtendableMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\IMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\InvalidJsonException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\InvalidProtocolBufferException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\JsonFormatter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\JsonParser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\JsonToken.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\JsonTokenizer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\LimitedInputStream.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\MessageExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\MessageParser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\ObjectIntPair.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\ProtoPreconditions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\CustomOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\Descriptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\DescriptorBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\DescriptorDeclaration.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\DescriptorPool.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\DescriptorUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\DescriptorValidationException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\EnumDescriptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\EnumValueDescriptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\ExtensionAccessor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\ExtensionCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\FieldAccessorBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\FieldDescriptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\FieldType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\FileDescriptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\GeneratedClrTypeInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\IDescriptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\IFieldAccessor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\MapFieldAccessor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\MessageDescriptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\MethodDescriptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\OneofAccessor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\OneofDescriptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\OriginalNameAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\PackageDescriptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\ReflectionUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\RepeatedFieldAccessor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\ServiceDescriptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\SingleFieldAccessor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\Reflection\TypeRegistry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\UnknownField.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\UnknownFieldSet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\WellKnownTypes\Any.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\WellKnownTypes\AnyPartial.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\WellKnownTypes\Api.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\WellKnownTypes\Duration.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\WellKnownTypes\DurationPartial.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\WellKnownTypes\Empty.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\WellKnownTypes\FieldMask.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\WellKnownTypes\FieldMaskPartial.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\WellKnownTypes\SourceContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\WellKnownTypes\Struct.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\WellKnownTypes\TimeExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\WellKnownTypes\Timestamp.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\WellKnownTypes\TimestampPartial.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\WellKnownTypes\Type.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\WellKnownTypes\ValuePartial.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\WellKnownTypes\Wrappers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\WellKnownTypes\WrappersPartial.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google.Protobuf\WireFormat.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\Hash32.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\PacketParser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Opcodes\ClientOpcodes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Opcodes\ClientOpcodesMap.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Opcodes\OpcodeIO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Opcodes\ServerOpcodes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Opcodes\ServerOpcodesMap.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Packets\Client.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Packets\Server.cs" />
+  </ItemGroup>
+</Project>

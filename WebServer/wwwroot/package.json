@@ -1,0 +1,38 @@
+{
+  "name": "wwwroot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.mix.js",
+  "optionalDependencies": {
+    "fsevents": "*"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/webpack-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@forevolve/bootstrap-dark": "^1.0.0-alpha.981",
+    "@latelier/vue-signalr": "^1.1.9",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "bootstrap": "^4.4.1",
+    "bootstrap-vue": "^2.13.0",
+    "cross-env": "^7.0.2",
+    "filepond-plugin-image-preview": "^4.6.2",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "vue": "^2.6.11",
+    "vue-context": "^5.1.0",
+    "vue-template-compiler": "^2.6.11",
+    "vue2-dropzone": "^3.6.0",
+    "webpack-mix": "^3.0.0"
+  },
+  "dependencies": {
+    "filepond": "^4.13.5",
+    "vue-filepond": "^6.0.2"
+  }
+}

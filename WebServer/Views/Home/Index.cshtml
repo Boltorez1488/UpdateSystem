@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Authorization";
+}
+
+@*@using(Html.BeginForm("Index", "Home", FormMethod.Post)) {
+        @Html.TextBox("Key", "Ввод ключа");
+}*@
+
+<div class="container">
+    <h1>Для продолжения введите ключ доступа</h1>
+
+    @using (Html.BeginForm("ApplyKey", "Home", FormMethod.Post)) {
+        <b-form-group label="Ключ:" label-for="key">
+            <b-form-input id="key" name="key"
+                            required
+                            placeholder="Ключ"></b-form-input>
+        </b-form-group>
+        <b-button type="submit" variant="primary">Вход</b-button>
+    }
+</div>

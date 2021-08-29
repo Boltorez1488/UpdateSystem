@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OpcodesData>
+  <Opcode Id="1">ClientPackets.AliveTick</Opcode>
+  <Opcode Id="2">ClientPackets.CrcRequest</Opcode>
+  <Opcode Id="3">ClientPackets.DownloadStart</Opcode>
+  <Opcode Id="4">ClientPackets.DownloadNextPart</Opcode>
+  <Opcode Id="5">ClientPackets.DownloadCancel</Opcode>
+  <Opcode Id="6">ClientPackets.DownloadStarted</Opcode>
+  <Opcode Id="7">ClientPackets.DownloadFinish</Opcode>
+  <Opcode Id="8">ClientPackets.DownloadCanceled</Opcode>
+</OpcodesData>

@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+//import "google/protobuf/timestamp.proto";
+
+package ClientPackets;
+
+message AliveTick {}
+
+// Request crc for all files or file ids
+message CrcRequest {
+    repeated uint64 fileIds = 1;
+}
+
+// Client initiated download
+//message DownloadStart {
+//    uint64 fileId = 1;
+//    bool isServerSender = 2; // Is server send first part now
+//    uint64 filePos = 3;
+//    google.protobuf.Timestamp startTime = 4;
+//}
+
+// Client request next part of file
+//message DownloadNextPart {
+//    uint64 fileId = 1;
+//}
+
+// Client request cancel download
+//message DownloadCancel {
+//    uint64 fileId = 1;
+//}
+
+message DownloadStarted {
+    uint64 fileId = 1;
+}
+
+message DownloadFinish {
+    uint64 fileId = 1;
+}
+
+message DownloadCanceled {
+    uint64 fileId = 1;
+}

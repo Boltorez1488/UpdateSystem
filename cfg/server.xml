@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ServerConfig>
+    <!-- Ключ доступа к веб панели -->
+    <WebKey>1234</WebKey>
+    <!-- Порт веб панели -->
+    <WebPort>5000</WebPort>
+
+    <!-- Порт сервера -->
+    <Port>1111</Port>
+    <!-- Сколько секунд ждать, прежде чем решать, что клиент умер -->
+    <AliveTimeout>15</AliveTimeout>
+    <!-- Сколько максимум пакетов разрешать читать от одного клиента за проход, чтобы не забивать канал другим -->
+    <MaxPacketsReadPerTick>100</MaxPacketsReadPerTick>
+
+    <!-- Рабочая папка, где будут храниться все файлы -->
+    <DownloadFolder>data</DownloadFolder>
+    
+    <!-- URL, откуда будет отдавать файлы nginx -->
+    <WebUrl>site.com</WebUrl>
+
+    <Spam>
+        <!-- Сколько разрешать пакетов, при превышении выкинет клиента -->
+        <Allow>10000</Allow>
+        <!-- За сколько секунд -->
+        <Seconds>10</Seconds>
+    </Spam>
+</ServerConfig>
